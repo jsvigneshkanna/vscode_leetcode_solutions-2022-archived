@@ -13,6 +13,14 @@ class Solution:
             result[index], result[index+length] = num, num
         return result
 
+        # Method 2
+        # return nums * 2
+
+        # Method 3
+        # nums.extend(nums)
+        # return nums
+
+
         
 # @lc code=end
 
