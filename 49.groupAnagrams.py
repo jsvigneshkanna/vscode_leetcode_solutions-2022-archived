@@ -20,5 +20,18 @@ class Solution:
             result.append(value)
         return result
         
+        '''
+        result = []
+        mappings = collections.defaultdict(list)
+        for value in strs:
+            count = [0]*26
+            for chars in value:
+                count[ord(chars) - ord('a')] += 1
+            mappings[tuple(count)].append(value)
+
+        for value in mappings:
+            result.append(mappings[value])
+        return result
+        '''
 # @lc code=end
 
